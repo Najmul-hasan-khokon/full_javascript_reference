@@ -1,0 +1,41 @@
+
+null
+_______
+   null means kono kichu nai.
+
+    // null set korbo amra for example kono ekta jaygay value chilo but
+          ekhon r sekhane value nai null set kore dewa hoyeche. 
+           ba khali kore null bosailei hobe . // null
+
+
+
+
+
+undifined
+____________
+// jeta nai seta use korar cesta korle // undifined dekhabe.
+
+
+    let name;
+      console.log(name); // undifined
+
+
+// function er vitore jodi kono kichu return na kora hoy
+      tahole undifined aste pare.
+      abar sudu return keyword likhe pore r kichu na dile undifined asbe.
+
+      function sumittion(num1, num2) {
+        console.log(num1 + num2);
+      }
+      const result = sumittion(3, 5); // 8
+      console.log(result); // undifined
+
+
+
+// function er peramitter e kichu pass na korle undifined asbe.
+      e khetre amra default peramitter dite pari.
+
+
+// kono ekta object er jei property ta nai 
+         seta jodi amra use korte cai tahole // undifined asbe.
+              // for example object.property 

@@ -1,0 +1,14 @@
+// kono ekta sonkha ke 400 diye bag korle 
+    jodi bag ses 0 hoy tahole setake leap year bole.
+function makeLeapYear(year) {
+  const reminder = year % 400; // 4
+  if (reminder === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(makeLeapYear(1700)); // flase
+console.log(makeLeapYear(2000)); // true
+
+

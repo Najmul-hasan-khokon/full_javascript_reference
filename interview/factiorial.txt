@@ -1,0 +1,55 @@
+function factFunc(n) {
+  var factorial = 1;
+  for (var i = 1; i <= n; i++) {
+    factorial = factorial * i;
+  }
+  return factorial;
+}
+console.log(factFunc(5)); // 120
+
+
+
+function factorial2(n) {
+  var fact = 1;
+  var i = 1;
+  while (i <= n) {
+    fact = fact * i;
+    i++;
+  }
+  return fact;
+}
+
+var result = factorial2(5);
+console.log(result);
+
+
+
+
+
+
+
+---another way to factorial
+_____________________________
+
+// jodi kono ekta function er vitor theke sei function take call
+// kora hoy tahole seta recursive function bole.
+
+
+// 0! = 1
+// 2! = 1*2
+// 5! = 1*2*3*4*5;
+// 5! = (5-1) * 5.
+// !n = n * (n-1);  //
+
+function factorial(n) {
+  if (n > 0) {
+    return n * factorial(n - 1);
+  } else {
+    return 1;
+  }
+}
+
+
+var result = factorial(5);
+console.log(result);
+

@@ -1,0 +1,31 @@
+
+ // jegular node ba html collection ache segula te js er kaj korate caile
+     loop kore tar por kaj calate hobe.
+
+document.getElementById('id') // sorasori select kore kaj korte parbo.
+document.getElementsByClassName('.class') // ekta collection pabo.
+document.getElementsByTagName('p') // ekta cllection pabo.
+ document.querySelector('.class')  // similar thakleo first class ta dorbe .
+ document.querySelectorAll('.class p') // multiple class dorte pare.
+
+
+   var hi = (document.querySelector(".hi").style.color = "red");
+      hi.setAttribute("title", "this is heading");
+
+
+
+ create an element
+_____________________
+      const article = document.getElementById("article"); // article select korlam.
+      const newpera = document.createElement("p"); // new element korlam.
+      newpera.innerText = "this is peragrap"; // etar vitore kichu text dilam.
+      article.appendChild(newpera);  // newpera ke article tage vitore push kore dilam.
+
+
+remove an element
+__________________
+article.removeChild(heading);
+
+
+// kontar vitore konta ache segula dekhar jonno.
+   const heading = document.getElementById("article").childNodes; / parentNode o ache.

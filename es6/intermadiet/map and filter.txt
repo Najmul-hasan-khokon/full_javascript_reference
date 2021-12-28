@@ -1,0 +1,65 @@
+map
+________
+
+   // map use korle eta ekta new array return kore.   
+    and map 3ta peramiter ney . value, index, array.
+
+
+   const numbers = [3, 4, 5, 6, 4];
+
+      const number = numbers.map((x) => x * x);
+      console.log(number);
+
+      const result = numbers.map((value, index, array) => {
+        return value * value, index; // array;
+      });
+      console.log(result);
+
+
+        //obeject maping
+
+    const students = [
+        { id: 33, name: "najmul" },
+        { id: 55, name: "khalek" },
+        { id: 66, name: "malek" },
+  	{ id: 22, name: "saleh" },
+      ];
+
+   const result = students.filter((x) => x.id > 33);
+    console.log(result);
+
+
+
+
+
+filter
+_______
+  // filter o new array dey.
+   
+  // filter hocce kono ekta conditioner upore vitti kore
+       kono ekta kichu ber kore niye ese output dekhabe.
+        condition match korlei dekhabe. orthad eta hocce chaknir moto 
+ 
+
+   const numbers = [3, 4, 5, 6, 4, 7];
+      const result = numbers.filter((x) => x % 2 === 0); // 4, 4, 6
+      // const result = numbers.filter((x) => x > 5); // 6, 7
+      console.log(result);
+
+
+
+find
+______
+    // filter er motoi but eta ekta element return kore . array return kore na.
+        condintion full fill hole jeta ke age pabe setake return kore dibe.
+       
+
+      const numbers = [3, 4, 5, 6, 4, 7, 11]; 
+     const result = numbers.filter((x) => x > 5); // 6
+
+
+
+
+forEach
+__________
+

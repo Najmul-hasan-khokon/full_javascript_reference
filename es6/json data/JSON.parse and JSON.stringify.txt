@@ -1,0 +1,23 @@
+
+1. JSON.parse() ; // convert an object from json data.
+2. JSON.stringify(); // convert json data from an object.
+
+
+// jokhon amra server theke data load korbo 99% data json format e asbe.
+       seta amader ke JSON.parse diye object e convert kore nite hobe.
+         amader data fula nested o hote pare object er vitore array abar tar vitore object etc....
+
+
+// data sever e post korte hole amra object ke stringify kore pathabo.
+// data server theke nite hobe json data ke parse kore sei object ke website e use korbo.
+
+
+
+
+      const user = { id: 22, name: "najmul hasan" };
+
+      const jsonData = JSON.stringify(user);
+      console.log(jsonData); // json data dekhabe.
+
+      const objectFromJson = JSON.parse(jsonData); // ager take abar object e convert korci.
+      console.log(objectFromJson); // object dekhabe.

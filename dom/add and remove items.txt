@@ -1,0 +1,25 @@
+
+
+   <ul id="parentId" style="width: 20%">
+      <li id="items">item-1</li>
+      <li id="items">item-2</li>
+      <li id="items">item-3</li>
+      <li id="items">item-4</li>
+      <li id="items">item-5</li>
+    </ul>
+    <button id="btn">click me</button>
+
+    <script>
+  // this will remove item
+      document.getElementById("parentId").addEventListener("click", (e) => {
+        e.target.remove(e.target);
+      });
+
+// this will add item in ul .
+      document.getElementById("btn").addEventListener("click", (e) => {
+        const rootItem = document.getElementById("parentId");
+        const li = document.createElement("li");
+        li.innerText = "item lave";
+        rootItem.appendChild(li);
+      });
+    </script>

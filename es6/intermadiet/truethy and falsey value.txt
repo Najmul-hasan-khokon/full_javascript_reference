@@ -1,0 +1,16 @@
+
+false value 
+_____________
+    false, 0, '', undefined, null, NaN 
+                              NaN means not a number. mane eta number na.
+
+
+
+
+truthy value
+_____________
+   // empty string chara string holei seta true.
+        flasey value chara by default sob true.
+            true, 'false' , '0', 'whiteSpace', [], {}
+         
+

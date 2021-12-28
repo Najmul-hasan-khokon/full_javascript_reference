@@ -1,0 +1,87 @@
+
+// obeject destructuring structure
+       const {variableName} = obejectName;
+       const [variableName] = arrayName; // jei variableName dibo seta tar index number
+                                              onujai niye nibe.
+
+
+// why should we use destrucring
+         jokhon onek boro obeject ba array theke specific value access korte caibo
+          tokhon destructuring use korbo.
+
+     const friends = {
+        name: "rasel",
+        age: 20,
+        phone: "01845652222",
+        address: "cumilla",
+        FriendFamily: {
+          father: "robiul",
+          brother: "karim",
+          sister: "hafiza",
+        },
+      };
+
+      const { name, address, phone } = friends; // friends object theke property gulake dorlam.
+      console.log(name, phone, address);
+
+
+      const { father } = friends.FriendFamily; // nested object hole = diye objectName. diye
+                                                  diye joto vitore jawa jay. 
+      console.log(father);
+
+
+
+
+
+
+
+// array destruncturing
+   
+        const frindAges = [23, 45, 6, 77, 55, 77];
+      const [first, second, ...lastAll] = frindAges; // frist 2ta bade baki sob new array
+                                                        orthad lastAll array te chole jabe.
+
+      console.log(first, second, lastAll);
+      console.log(lastAll); // 6, 77, 55, 77
+
+
+
+
+
+// nested obeject and array
+
+      const friends = {
+        name: "rasel",
+        age: 20,
+        phone: "01845652222",
+        address: "cumilla",
+        FriendFamily: ["karim", "rafiq", "abul"],
+      };
+
+      const [frist, ...last] = friends.FriendFamily;
+      console.log(frist, ...last);
+
+      // let arr = [
+      //   ["foo", "foo1"],
+      //   ["bar", "bar1"],
+      // ];
+      // var a, b, c, d;
+      // [[a, b], [c, d]] = arr;
+      // console.log(a, b, c, d);
+
+
+
+
+
+// object.array.object acces korci
+
+         const friends = {
+        name: "rasel",
+        age: 20,
+        phone: "01845652222",
+        address: "cumilla",
+        FriendFamily: ["karim", "rafiq", "abul", { me: "najmul", age: 20 }],
+      };
+
+      const { me, age: ages } = friends.FriendFamily[3];
+      console.log(me, ages);

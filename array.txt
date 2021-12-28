@@ -1,0 +1,62 @@
+var array = [21, 8, 17, 40, 50];
+
+var newarr = (array[1] = 9);
+console.log(newarr);
+
+array.indexOf(8);  // arr er index number jante caile.
+array.push(40) add first element.
+array.pop() // remove last element.
+array.shift(); // remove first element.
+array.unshift(2); // add first element.
+array.length // arr er modde koyta elements ache seta jante.
+
+// slice use korle original array change hoy na.
+array.slice(2); // ending na bolle starting theke last element porjonto print hobe.
+array.slice(1, 4); // 1 index theke 4 er ag porjonto print hobe.
+
+
+
+// while Loop
+  var i= 0;
+while (i < 15) {
+  console.log(i);
+  i++;
+}
+
+// for loop
+var allFriends = ["najmul", "rasel", "faruk", "sah alam", "riyad", "jobayer"];
+
+for (var i = 0; i < allFriends.length; i++) {
+  var elements = allFriends[i];
+  console.log(elements);
+}
+
+
+// switch   kono ekta case match korlei output dekhabe. then break hoye jabe.
+
+var isOrange = "jam";
+
+switch (isOrange) {
+  case "banana":
+    console.log("this is banana");
+    break;
+  case "orange":
+  case "jam":
+    console.log("this is orange");
+    break;
+
+  default:
+    console.log("papaya");
+    break;
+}
+
+
+
+// object 
+
+var student1 = { id: 1, name: "najmul", age: 21 };
+   // 3vabe object er property access kora jay.
+var studentName = "name";
+var studentName1 = student1[studentName];
+var studentName2 = student1["name"];
+var studentName3 = student1.name;

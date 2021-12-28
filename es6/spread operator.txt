@@ -1,0 +1,22 @@
+ 
+// spread operator.
+     just ...
+
+const age1 = [2, 4, 65, 7, 3];
+      const age2 = [33, 4, 22, 55];
+      const allAges = [...age1, ...age2];
+     // const allAges = [age1, age2]; // evabe , diye bosale arr er item jog hobe.
+                                        but sob gula ekta arr te hobe na.
+      console.log(allAges);
+
+
+
+
+
+
+// direct array dile hobe na.
+     array er item gula ke dite hobe. 
+     just ... dilei se item gula ber kore result dibe.
+const takaPoisa = [445, 556, 223];
+      const result = Math.max(...takaPoisa); // 556
+      console.log(result);

@@ -1,0 +1,40 @@
+
+
+
+ <div style="width: 15%">
+      <span id="resultSpan">Total FeeT: 0</span>
+      <br />
+      <input
+        type="text"
+        id="inputField"
+        placeholder="write inch"
+        style="margin-top: 10px"
+      />
+      <button id="btnHandler" style="margin-top: 10px">
+        Convert Einch To Feet
+      </button>
+    </div>
+
+    <script>
+
+// button handler.
+
+      document.getElementById("btnHandler").addEventListener("click", () => {
+         // call the function
+        getFeet("inputField", "resultSpan");
+      });
+
+
+// feet function with output and input.
+
+      function getFeet(inputId, outputId) {
+        const feet = 12;
+        const inputField = document.getElementById(inputId).value;
+        const sum = inputField / feet;
+        const result = Math.round(sum);
+
+        const output = document.getElementById(outputId).innerText;
+
+        document.getElementById(outputId).innerText = `Total FeeT: ${result}`;
+      }
+    </script>

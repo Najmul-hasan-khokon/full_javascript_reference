@@ -1,0 +1,55 @@
+// age class likbo. tar virore ekta constructor likbo jekhan diye amra
+       object theke value pass kore dite pari.
+        tarpor object make korbo.  
+         jei property lekhona kno this keyword dite hobe.
+          just like that this.something  
+
+ // class er subida same ekta id ba structure diye
+      vinno vinno object make korte para.
+
+
+// classe er name gula always uppercase likhle valo hoy.
+ class student {
+        constructor(id, name) {     // new obeject theke constructor e value pathaice.
+          this.id = id;
+          this.name = name;
+          this.cloth = 'blue' // eta sobar jonno ek. tai kothow thke pass kora lagbe na.
+        }
+      }
+      const student1 = new student(10, "najmul");
+      const student2 = new student(55, "rasel");
+      console.log(student1);
+      console.log(student2);
+
+
+
+// alada kore class er property use kora jabe.
+        console.log(student1.name);
+
+
+
+
+
+// class with inheritace and method
+
+    class Parent {
+        constructor() {
+          this.names = "abdu satter";
+        }
+      }
+
+      class Child extends Parent {
+        constructor(name, age) {
+          super();
+          this.name = name;
+          this.age = age;
+        }
+        getMethod() {
+          return "i am a method";
+        }
+      }
+      const baby = new Child("najmul", 20);
+      console.log(baby);
+      console.log(baby.getMethod());
+
+

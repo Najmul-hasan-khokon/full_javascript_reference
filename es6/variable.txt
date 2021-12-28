@@ -1,0 +1,15 @@
+// const
+      const diye array ba object declare korle . setar property and method gula 
+            change kora jabe. but variable name change kora jabe na.
+
+
+
+// let 
+     let use korle variable er value change korte parbo.
+     {} er vitore let ba const use korle seta r bahire access kora jabe na. orthad eta scop mantain kore.
+
+
+
+
+// var 
+    modern juge ese var totally avoid korbo.

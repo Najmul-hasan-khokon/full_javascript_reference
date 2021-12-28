@@ -1,0 +1,15 @@
+const num1 = 'najmul';
+const num2 = 'hasan';
+const result = `${num1} ${nu2} and i am 10 year's `
+
+
+// multi lineo lekha jabe
+      const result = `${num1} ${nu2} and i am 10 year's.
+                      i am studing at 
+                      inter 2nd year `
+
+
+
+
+
+// old model   'my name is /n' + 'najmul';

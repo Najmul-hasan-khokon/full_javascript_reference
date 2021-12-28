@@ -1,0 +1,14 @@
+
+// function primeBaMoulic(n) {
+//   for (var i = 2; i < n; i++) {
+//     if (n % i === 0) {
+//       return " eta moulic ba prime number na";
+//     } else {
+//       return "eta moulic ba prime number";
+//     }
+//   }
+// }
+
+// var result = primeBaMoulic(105);
+// console.log(result);
+

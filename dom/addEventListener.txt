@@ -1,0 +1,79 @@
+// addEventListener
+
+ <h1>this is event page</h1>
+    <button id="btn">get purple</button>
+    <button id="btn2">get red</button>
+
+
+    <script>
+
+
+1 number way
+_____________
+      function handleClick() {
+        document.body.style.background = "purple";
+      };
+      const btn1 = document.getElementById("btn"); // btn1 ke dorci.
+      btn1.addEventListener("click", handleClick); // event handle korci and
+                                                      tar modde ekta function call korci.
+ 
+
+    btn1.onClick = handleClick; //  janar jonno janci. evabeo hote pare but kaje lagbe na.
+
+2 number way
+______________
+// ekhane id select eventLisTener sob ek sathe korci.
+      document.getElementById("btn2").addEventListener("click", function () {
+        document.body.style.background = "tomato";
+      });
+
+
+ 3 number way
+________________
+    document.getElementById("btn2").addEventListener("click", function (e) {
+        document.body.style.background = "tomato";
+     //   e.stopPropagation() // parent er event stop korte pari.
+      //  e.stopImmediatePropagation() // ase paser sob event stop hobe.
+      });  
+
+    </script>
+
+
+
+
+
+event.target
+_______________
+ event.target  // jei element e click hoice setake amra e.target diye dorte pari.
+e.target.innerText
+e.target.HTML
+e.target.parentNode
+e.target.childNode
+// jei element target e thakbe se remove hobe.
+e.target.remove(e.target) // curren element remove hobe. nijeke nije remove korci.
+e.target.parentNode.removeChild(e.target); // parent er child orthad
+                                              nijei nejeke remove korlam.
+
+
+
+// input ke =  value diye pabo.
+// r h1 theke p porjonto =  innerText diye pabo.
+
+
+// item e click korle text gula dekho.
+  <ul>
+      <li id="items">item-1</li>
+      <li id="items">item-2</li>
+      <li id="items">item-3</li>
+      <li id="items">item-4</li>
+      <li id="items">item-5</li>
+    </ul>
+    <script>
+      const items = document.querySelectorAll("#items");
+      for (let i = 0; i < items.length; i++) {
+        const element = items[i];
+        element.addEventListener("click", function (e) {
+          console.log(e.target.innerText);
+        });
+      }
+    </script>

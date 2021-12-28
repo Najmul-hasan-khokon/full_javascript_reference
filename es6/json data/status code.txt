@@ -1,0 +1,23 @@
+200 OK // success
+404 Not Found // data na pawa gele.
+403 Forbidden; // je access korte caice tar ota access korar permission nai.
+400 Bad Request; // vul url e hit korle.
+401 Unauthorized; 
+
+
+
+
+
+500 egula hocce server error
+_______________________________
+
+503 Service Unavailable; // server e eta unavailable.
+504 Gateway Timeout; // load howar time ses hoye geche.
+
+
+
+
+
+
+1 min = 60000 ms;  // 60000k milisecond e 1 minute.
+1 second = 1000ms;

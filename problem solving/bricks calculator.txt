@@ -1,0 +1,33 @@
+
+// bricks calculator function
+
+function brickCalculator(floor) {
+      let firstTenFloor = 15;
+      let secondTenFloor = 12;
+      let TwentyUPFloor = 10;
+      let bricks = 0;
+      const perFeet = 1000;
+
+  if (floor <= 10) {
+        bricks = floor * firstTenFloor * perFeet;
+  } else if (floor <= 20) {
+        // evabeo dewa jay
+        //  var firstTenFloor = 10 * firstTenFloor * perFeet;
+        firstTenFloor = 150000; //  amount of first ten floor.
+        const remaiming = floor - 10;
+        secondTenFloor = remaiming * secondTenFloor * perFeet;
+        bricks = firstTenFloor + secondTenFloor;
+  } else {
+        firstTenFloor = 150000; //  amount of first ten floor.
+        secondTenFloor = 120000; //  amount of second ten floor.
+        const remaiming = floor - 20;
+        TwentyUPFloor = remaiming * TwentyUPFloor * perFeet;
+        // sumition of first , second and third floor's
+        bricks = firstTenFloor + secondTenFloor + TwentyUPFloor;
+  }
+
+   return bricks;
+}
+
+var result = brickCalculator(20);
+console.log(result);

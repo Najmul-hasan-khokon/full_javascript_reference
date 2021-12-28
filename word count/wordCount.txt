@@ -1,0 +1,35 @@
+/** 
+var name = [2, 3, 6, 2, 3, 6, 7, 6];
+var uniqueName = [];
+
+for (var i = 0; i < name.length; i++) {
+  var element = name[i];
+  var index = uniqueName.indexOf(element);
+  if (index === -1) {
+    uniqueName.push(element);
+  }
+}
+
+console.log(uniqueName);
+*/
+
+
+
+
+
+// word count korce
+
+/**
+var speech = "hello my name is       najmul  hasan. and i am 21 years old.";
+
+var space = 0;
+for (var i = 0; i < speech.length; i++) {
+  var char = speech[i];
+  if (char === " " && speech[i - 1] != " ") {
+    space++;
+  }
+}
+space++;
+
+console.log(space);
+ */

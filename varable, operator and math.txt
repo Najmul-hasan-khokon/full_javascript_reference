@@ -1,0 +1,61 @@
+//online editor
+   codepan.io
+
+
+//variable name gula meaningful dewa uchit
+    var bananaPrice = 10;
+
+var promise = "i promise i will work HARD i want to become a programmer";
+    promise.toLowerCase()
+    promise.indexOf('work')  // value match na hole -1 asbe.
+    promise.split(' ')  // eta diye string ke bag korte pari. jeta diye 
+                           bag korbo just  just bole dibo. spli('i')
+
+
+
+// intiger
+     var number1 = 20; 
+// floating number
+     var number2 = "15.5"; 
+// ekta number er sathe string + hoile  2ta pasa pasi bose jabe.
+
+// float er maddome string ke number e convert korte pari.
+        number2 = parseFloat(number2);
+
+ // eta korle purno sonkha dekhabe.   .er porer ongso kete dibe + string ke number e convert korbe.
+        number2 = parseInt(number2);
+
+     number2 = +number2 // evabe + dileo string ke number e convert hoye jabe.
+
+     console.log(number1 + number2);
+
+
+var number1 = 4.398889987877; 
+   number1.toFixed(2)  // dosomiker pore koyta sonkha dekhate cai.
+
+
+// operator
++  -  * / %
+var a = 5;
+    a++;
+    a--;
+
+
+var a = -5;
+   console.log(Math.abs(a)); // negative ba positive value don't care . absolute value
+                              dibe. 
+
+   Math.round() // kusra khasra value bad diye seta purno kore dey
+                   5.48588 = 5;
+                   5.567 = 6;
+
+   Math.ceil() // always upore jabe. kono char nai.
+                  5.00012 = 6;
+
+
+  Math.floor() // always niche jabe . kushra jai thakuk. doesn't matter. niche namai pelbe.
+               5.99755 = 5;
+
+
+  Math.random() // 0 theke 1 er moddei thakbe random er value.
+                 Math.random() * 100;

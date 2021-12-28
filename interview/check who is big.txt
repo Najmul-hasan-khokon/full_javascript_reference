@@ -1,0 +1,34 @@
+
+
+var business = 1009;
+var minister = 300;
+var sochib = 304;
+
+if (business > minister) {
+  if (business > sochib) {
+    console.log("business is bigger");
+  } else {
+    console.log("schib  is bigger");
+  }
+} else {
+  if (minister > sochib) {
+    console.log("minister is bigger");
+  } else {
+    console.log("sochib is  is bigger");
+  }
+}
+
+
+
+ Another way
+________________
+
+
+var business = 1009;
+var minister = 300;
+var sochib = 304;
+
+var maximumResult = Math.max(business, minister, sochib);
+var minimumResult = Math.min(business, minister, sochib);
+console.log(maximumResult);
+console.log(minimumResult);

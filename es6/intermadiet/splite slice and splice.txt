@@ -1,0 +1,45 @@
+slice , splice and split  , join
+_________________________________
+        // amra array ke bangte pari katte pari and join o korte pari.
+          // split arrate kaj korbe na . eta variable ba object e use kore arr te convert hoy.
+
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const part = nums.slice(2, 5); // [ 3, 4, 5] start number theke ending numberer ag porjonto array theke
+                                                 kete niye asbe. but main array change korbe na.
+                                                 0 theke last ending element er ag porjonto hisab korle subida hoy.
+// console.log(part);
+
+
+
+const removed = nums.splice(2, 4); // [3,4,5,6] remove hoye jabe.  eta main array ke change 
+                                                 kore pelbe. caile third fourth peramitere kichu add korte pari.
+
+console.log(removed);
+console.log(nums);
+
+
+
+
+// anoter example of splice.
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+const removed = nums.splice(2, 4, 55, 76); // first second er porer sob add hobe array te.
+console.log(removed);
+
+
+
+
+
+   join
+  ______
+
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+console.log(nums.join("")); // sob item ek sath hoye jabe. kono , ba space thakbe na.
+console.log(nums.join(",")); // prottekta item e majkhane ekta kore , bosabe.
+console.log(nums.join(" ")); // prottekta item e majkhane ekta kore white space hobe.
+
+console.log(nums.join("age")); // majkhane age add hoye jabe.

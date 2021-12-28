@@ -1,0 +1,13 @@
+// kokhono jodi expected value na pay tahole
+    se default peramitter dhore nibe .   
+    just function () er vitore something = ''; erokom kichu dilei hobe
+    array object variable er khetre amra default valo dite pari. ete kore
+    r expected value na pele error asbe na.
+    expection value dile default value r kaj korbe na.  very usefull eta
+
+function add(num1, num2 = 20){
+     return num1 + num2;
+}
+
+const total = add(10);
+console.log(total);  // 30

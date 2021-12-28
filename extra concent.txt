@@ -1,0 +1,6 @@
+jog korte caile kono ekta var er intial value 0 dibo.
+var a = 0;
+
+
+gun korte caile var er intial value 1 dibo. jete result e imfect na pele;
+var a = 1;

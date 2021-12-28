@@ -1,0 +1,47 @@
+
+
+
+ <h1>this is event page</h1>
+
+    <ul id="parentItem">
+      <li id="item">item-1</li>
+      <li id="item">item-2</li>
+      <li id="item">item-3</li>
+      <li id="item">item-4</li>
+      <li id="item">item-5</li>
+    </ul>
+    <button id="addItem">add item</button>
+    <script>
+  /**
+          // const items = document.querySelectorAll("#item");
+      // for (let i = 0; i < items.length; i++) {
+      //   const element = items[i];
+      //   element.addEventListener("click", function (e) {
+      //     // e.target.remove(e.target);
+      //     e.target.parentNode.removeChild(e.target);
+      //   });
+      // }
+  */
+
+
+
+    const addItem = document
+        .getElementById("addItem")
+        .addEventListener("click", function (e) {
+          const parentItem = document.getElementById("parentItem");
+          const items = document.createElement("li");
+          items.innerText = "this is an item";
+          parentItem.appendChild(items);
+        });
+
+// item add kora lagle operation always  parent er upore chalabo.
+  
+      const parenItem = document
+        .getElementById("parentItem")
+        .addEventListener("click", function (e) {
+          // e.target.remove(e.target);
+          // console.log(this, e.target);
+          e.target.parentNode.removeChild(e.target);
+        });
+
+    </script>

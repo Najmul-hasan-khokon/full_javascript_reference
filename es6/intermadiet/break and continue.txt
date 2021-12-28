@@ -1,0 +1,26 @@
+
+// filter method use koreo amra break ba continue kore pelte pari.
+      e khetre break ba continue dite hobe na. just condition dilei hobe.
+     // for loop use korle just condition er vitore break and continue bole dibo.
+
+
+
+const nums = [
+  "najmul",
+  "khokon",
+  "jamal",
+  "kamal",
+  "kdflfldfldflkf",
+  "abul",
+  "kalam",
+];
+
+const result = nums.filter(
+  (x) => x === "najmul" && x !== "jamal" && x !== "abul"
+);
+console.log(result); // najmul    pore 2ta flase tai print hobe na.
+
+
+
+
+

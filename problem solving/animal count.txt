@@ -1,0 +1,29 @@
+// animal count function 
+// eta bricks er example er motoi
+
+
+function animalCalculator(depth) {
+  var animal = 0;
+
+  if (depth <= 10) {
+      animal = depth * 50; // 50ta animal
+
+  } else if (depth <= 20) {
+       var firstPart = 10 * 50; // amount of first ten animal.
+       var remaining = depth - 10; // first ten mile - depth.
+       var secondPart = remaining * 100; //  100 animal * remaining.
+       animal = firstPart + secondPart;
+
+  } else {
+      var firstPart = 10 * 50;
+      var secondPart = 10 * 100;
+      var remaining = depth - 20;
+      var thirdPart = remaining * 300;
+      animal = firstPart + secondPart + thirdPart;
+  }
+
+  return animal;
+}
+
+var result = animalCalculator(2);
+console.log(result);

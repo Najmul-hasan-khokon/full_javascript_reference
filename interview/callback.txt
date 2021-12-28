@@ -1,0 +1,18 @@
+// kono ekta function e arekta function er arguement 
+   akare pass kore use korai hocce callback function.
+
+
+function expalainCallback(name, callbackFunc) {
+  console.log("i am", name);
+
+  callbackFunc();
+}
+
+function takeShower() {
+  console.log("take a shower");
+}
+function washHand() {
+  console.log("wash hand");
+}
+expalainCallback("najmul hasan", takeShower);
+expalainCallback("rasel", washHand);

@@ -1,0 +1,43 @@
+// purata run korle username pabo ekta list akare.
+    // amra jokhon server theke kono kichu get, kori tokhon sekhane ekta promise return kore
+        sudu data aslei promise  then() block e asbe. r error asle catch() block e err dhorte parbo.
+        server theke data asa porjonto promise wait kore.
+
+
+
+ 
+
+   <style>
+      .item {
+        list-style-type: decimal-leading;
+        color: red;
+        margin-bottom: 10px;
+      }
+    </style>
+
+
+    <h1>JSON</h1>
+    <h2>javascript object notetion</h2>
+
+    <ul id="userData"></ul>
+
+    <script>
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response) => response.json())
+        .then((json) => {
+          displayUsers(json);
+        })
+        .catch((err) => console.log(err)); // error asle dhore pelbe.
+
+      function displayUsers(users) {
+        const userNams = users.map((user) => user.username); // users theke userNames gula niye aslam.
+        // userNames theke userName gula niye aslam.
+        userNams.map((userName) => {
+          const userData = document.getElementById("userData");  // element create kore ul e append kore dilam.       
+          const li = document.createElement("li");
+          li.innerText = userName;                                       
+          li.setAttribute("class", "item");
+          userData.appendChild(li);
+        });
+      }
+    </script>

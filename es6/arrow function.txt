@@ -1,0 +1,54 @@
+
+
+// ekta peramitter hole perenthesis dewa lagbe na. return keyword tao use korte hobe na.
+      ekadhik peramiter hole prenthesis dewa lagbe.
+
+    const doubleIt = num => num * 2;
+
+      const result = doubleIt(5);
+      console.log(result);
+
+
+
+
+// multiple peramiter.
+      const doubleIt = (num1 , num2) => num * num2; // return lagbe na automatic hobe.
+
+
+
+// kono peramiter na thakle.
+        const doubleIt = () =>  3 * 5; // just () dilei hobe.
+
+
+
+
+
+// onek boro function hole just {} diye debo.
+  const doubleIt = (num1, num2) => {
+        const reult = num1 * num2;
+        return reult;
+      };
+
+      const result = doubleIt(5, 8);
+      console.log(result);
+
+
+
+
+
+
+
+
+
+// etai let and const er boisisto.
+      ekoi name multiple jaygay thakleo bahite ese kono mara mari korbe na .
+
+        const doubleIt = (num1, num2) => {
+        const result = num1 * num2;
+        return result;
+      };
+
+      const result = "bahite ese kono mara mari korbe na";
+      console.log(result);
+
+
