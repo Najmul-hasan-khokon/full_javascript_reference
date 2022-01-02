@@ -1,0 +1,36 @@
+// jokhon kono ekta object er property amader ke bar bar declare korte hobe tokhon amra ekti
+     common class likhe jegula pray sob object thakar sombabona ache segula ke common class e niye jabo. 
+      tarpor onno class gulate just inheritence kore dibo.
+
+class SmartDevice {
+  constructor(name, camera, price) {
+    this.name = name;
+    this.camera = camera;
+    this.price = price;
+  }
+  isCharging() {
+    return "i am charging";
+  }
+}
+
+class Phone extends SmartDevice {
+  constructor(name, camera, price) {
+    super(name, camera, price);
+  }
+}
+
+class Laptop extends SmartDevice {
+  constructor(name, hardisk, camera, price) {
+    super(name, camera, price);
+    this.hardisk = hardisk;
+  }
+}
+
+const nokia = new Phone("Nokia", "10 mega", 12000);
+const samsung = new Phone("Samsung", "3 mega", 4000);
+const dell = new Laptop("dell", "320 Gb", "5 mega", 50000);
+console.log(nokia);
+console.log(samsung);
+console.log(dell);
+console.log(dell.isCharging());
+

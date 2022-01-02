@@ -1,0 +1,79 @@
+// kono ekta object e ekta method thakle sei object theketo amra method take access korte parboi
+     but sei method take jodi amra onno object er upore apply korte cai tahole amra.
+       sei method er sathe object take bind kore pelbo.
+// kono object e jodi kono ekta method na thake but seta onno object e ache tahole amara sei object er jonno
+     abar new method make na kore just object take method er sathe bind kore dite pari.
+
+// tomi jodi mone koro kono ek jaygay ekta method ache ekhon seta dar kore use korte hobe.
+     tahole tomi bind, call and apply use korte paro.
+
+
+// whitout bind simple example.
+ const normalPerson = {
+        firstName: "najmul",
+        lastName: "hasan",
+        salary: 10000,
+        getName: function () {   // object e function likle setake method bola hoy.
+           return ` ${this.firstName} ${this.lastName}`;  // this mane hocce ei object er firstName and lastName.
+        },
+
+        getChargeSalary: function (amount) {
+          this.salary = this.salary - amount; 
+        },
+      };
+
+   // console.log(normalPerson.getName()); 
+      normalPerson.getChargeSalary(2000);
+      console.log(normalPerson.salary);
+
+
+
+
+
+
+
+
+  // bind, call and apply.
+
+const normalPerson = {
+  firstName: "najmul",
+  lastName: "hasan",
+  salary: 10000,
+  getName: function () {
+    return ` ${this.firstName} ${this.lastName}`;
+  },
+
+  getChargeSalary: function (amount) {
+    console.log(this);
+    this.salary = this.salary - amount;
+    return this.salary;
+  },
+};
+
+const friends = {
+  firstName: "rasel",
+  lastName: "hossain",
+  salary: 20000,
+};
+
+// normalPerson.getChargeSalary(2000);
+// console.log(normalPerson.getName());
+// console.log(normalPerson.salary);
+
+const result = normalPerson.getChargeSalary.bind(friends);  // getName method er this er value ta hobe friends.
+console.log(result(2000));
+console.log(friends.salary);
+
+
+
+
+// normalPerson.getChargeSalary.call(friends, 3000); 
+// console.log(friends.salary);  // call use korle r alada kore function calll korte hobe na
+                                                        just first peramiter e this er value and second peramiter e
+                                                          salary koto.
+
+normalPerson.getChargeSalary.apply(friends, [5000]); 
+console.log(friends.salary);  // apply use korle r alada kore function calll korte hobe na
+                                                        just first peramiter e this er value and second peramiter e
+                                                          ekta [array] dite hobe..
+ 

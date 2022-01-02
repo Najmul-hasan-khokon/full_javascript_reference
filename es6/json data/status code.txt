@@ -1,4 +1,6 @@
 200 OK // success
+201 Created; // data post kora success hole.
+The request has been fulfilled, resulting in the creation of a new resource.
 404 Not Found // data na pawa gele.
 403 Forbidden; // je access korte caice tar ota access korar permission nai.
 400 Bad Request; // vul url e hit korle.

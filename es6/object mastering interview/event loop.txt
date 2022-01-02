@@ -1,0 +1,8 @@
+
+// javascript e even loop name ekta jinis ache  jekhane3ta jinis thake.
+
+       1: stack
+            kontar por konta kaj korbe sei jinista
+
+       2: queue ba waiting line thake kichu jinis.   kono ekta stack khali holei waiting e 
+               thaka code gula stack e chole jay then execude hoy.

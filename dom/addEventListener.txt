@@ -1,5 +1,32 @@
 // addEventListener
 
+এরকম আপনি চাইলে এখানে  addEventListener টাইপে প্যারামিটার হিসেবে load, error, DOMContentLoaded, focus, blur, submit, resize, cut, copy, keydown, keypress,
+                                     keyupসহ আরো অনেক টাইপের ইভেন্ট দিতে পারবেন।
+
+
+// window er pore document.
+     window hocce pura application r document hocce sudu murkap .
+
+window.addEventListener('load', function() {}; // load event ta amra window er upor gotabo. jokhon page er content guli
+                                                   purapuri load hobe tokhon event ta gotabo. load er somoy ekta loader o dekhabo.
+
+// ইলিমেন্ট লোড হওয়ার পরঃ আমরা আমাদের উপরের img1সফলভাবে লোড হওয়ার পর কোনো অ্যাকশন নিতে চাইলেঃ
+   img1.addEventListener('load', function() { console.log('Image 1 Has Successfully Loaded!'); });
+    img2.addEventListener('error', function() { console.log('Image Cannot be loaded!'); }); // img load na hole .
+
+
+document.addEventListener('DOMContentLoaded', function() {}; // — শুধুমাত্র মার্কাপ লোড হওয়ার পরের ইভেন্টঃ 
+
+document.addEventListener('keydown', function() { console.log('Key Down Event'); }); // key listener gula amra document 
+                                                            er upore calate hobe. jeheto pura browseroi ekta document.
+                                                            keypress, keyup egula sob document e hobe.
+
+
+
+
+
+
+
  <h1>this is event page</h1>
     <button id="btn">get purple</button>
     <button id="btn2">get red</button>
@@ -22,17 +49,18 @@ _____________
 
 2 number way
 ______________
-// ekhane id select eventLisTener sob ek sathe korci.
+// ekhane id select addEventListenersob ek sathe korci. addEventListener 2ta peramiter ney addEventListener(type, function)
       document.getElementById("btn2").addEventListener("click", function () {
         document.body.style.background = "tomato";
       });
+
 
 
  3 number way
 ________________
     document.getElementById("btn2").addEventListener("click", function (e) {
         document.body.style.background = "tomato";
-     //   e.stopPropagation() // parent er event stop korte pari.
+     //   e.stopPropagation() // parent er event stop korte pari.  etar kaj hocce — বাবল আপ(Bubble Up): bondo kora.
       //  e.stopImmediatePropagation() // ase paser sob event stop hobe.
       });  
 

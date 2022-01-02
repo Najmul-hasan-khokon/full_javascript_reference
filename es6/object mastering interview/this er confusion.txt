@@ -1,0 +1,22 @@
+
+//// kono ekta method jokhon amara call korbo tokhon dekte hobe sei method er . er age ki ache
+      jeta thakbe setai hobe tar this er value.
+        orthad . er bame kew thakle tar context e run hoye jabe. jodi kew na thake tahole window er context e hobe.
+
+
+
+const Person = {
+  name: "najmul",
+  getNajmul: function () {
+    // console.log(this);
+    return this.name + " hasan";
+  },
+};
+
+const Person2 = {
+  name: "rasel",
+};
+
+console.log(Person.getNajmul()); // najmul hasan
+Person2.getNajmul = Person.getNajmul;
+console.log(Person2.getNajmul()); // rasel hasan

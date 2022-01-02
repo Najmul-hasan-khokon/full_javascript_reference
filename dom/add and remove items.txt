@@ -23,3 +23,9 @@
         rootItem.appendChild(li);
       });
     </script>
+
+
+
+
+userdata.classList.add("hi"); // amra caile class o add korte pari.  <ul id='userData' class='hi'> </ul>
+userData.classList.remove("hi"); // remove o korte pari.   <ul id='userData'> </ul>

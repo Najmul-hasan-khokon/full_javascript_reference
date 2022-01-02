@@ -1,0 +1,42 @@
+
+// by default javascript asyncronously kaj kore. orthad serial by serial code execute kore.
+       ekta kaj ses hote deri hole porer code e chole jay wait na korei.
+// async sadaronoto kono ekta function er age dite hobe. onno kothaw eta kaj korbe na.
+
+
+// .then and .catch diye na likhe evabeo likte pari.
+const getTodos = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  const data = await res.json();
+  console.log(data);
+};
+
+getTodos();
+
+
+
+
+
+// normal function.
+async function hello(name) {
+  return "hello" + name;
+}
+const greeting = hello(" najmul");
+greeting.then((res) => console.log(res));
+
+
+
+
+// arrow function hole = er pore async hobe.
+const hello = async (name) => {
+  return "hello" + name;
+};
+const greeting = hello(" najmul");
+greeting.then((res) => console.log(res));
+
+
+
+
+
+// settimeout hocce ekbar call hoy.
+// setinterval hocce ekta nirdisto somoy pore seta bar bar call hote thake.

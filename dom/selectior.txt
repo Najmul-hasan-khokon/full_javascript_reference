@@ -2,11 +2,19 @@
  // jegular node ba html collection ache segula te js er kaj korate caile
      loop kore tar por kaj calate hobe.
 
+console.dir(items) // kono ekta element select kore console.dir kore tar property and method gula ber kora jay.
+
 document.getElementById('id') // sorasori select kore kaj korte parbo.
 document.getElementsByClassName('.class') // ekta collection pabo.
-document.getElementsByTagName('p') // ekta cllection pabo.
- document.querySelector('.class')  // similar thakleo first class ta dorbe .
- document.querySelectorAll('.class p') // multiple class dorte pare.
+document.getElementsByTagName('p') // ekta cllection pabo. // nodeList ba HTML collection return kore.
+document.querySelector('ul li span')  // similar thakleo first class ta dorbe .
+document.querySelectorAll('.class p') // multiple class dorte pare.  nodeList return kore.
+document.querySelectorAll('div, h2, p') // multiple tags. 
+    document.querySelector('[data-atr="box1"]'); // slect element with attribute.
+    document.querySelectorAll('[data-atr="box1"], [id="box2"]');
+         document.querySelector('li:first-child'); // frist child with সুডো-ক্লাস(Pseudo-classe) diye select korte pari.
+         document.querySelectorAll('li:first-child, li:last-child'); // first child and last child with pseudo class.
+         document.querySelectorAll('.box:not(#box3)'); // 3number box bade sob select hobe.
 
 
    var hi = (document.querySelector(".hi").style.color = "red");

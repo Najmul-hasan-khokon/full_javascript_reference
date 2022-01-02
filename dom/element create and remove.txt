@@ -1,5 +1,44 @@
 
 
+var newDiv = document.createElement('div'); // element create korbe.
+             newDiv.textContent = 'this is plain text'; // eta diye amra plain text dukate pari.
+             newDiv.innerText = 'this is inner text'; // etao plain text add kore.
+             newDiv.innerHTML = 'thi is html'; // ager tar sathe pray same.
+
+const newDiv = document.getElementById('newDiv');
+               newDiv.classList.add('newClass'); // element e class add korte pari.
+               newDiv.classList.remove('newClass'); // element e class remove o korte pari.
+
+
+   setAttribute()দিয়ে। এই মেথড দুইটা আর্গুমেন্ট নিবে। প্রথমটা অ্যাট্রিবিউটের নাম, আর দ্বিতীয়টা সেটার ভ্যালু কি হবে সেটাঃ
+         newDiv.setAttribute('data-attr', 'someOtherThing');
+         newDiv.setAttribute('title', 'someOtherThing');
+   newDiv.removeAttribute('data-attr'); // attrubute romove korte pari se khetre just attribute name dilei hobe value lagbe na.
+
+
+       // style add korte caile.
+   console.dir(newDiv.style); // element e ki ki css property ache segula dekce pari.
+   newDiv.style.backgroundColor = '#000';
+     newDiv.style.textAlign = ''; // evabe 'empty' string diye style remove o korte pari.
+
+
+   // element add kora.
+parent.appendChild(child); // seser dik theke parent e child element dukai dibo.
+
+            
+             // parent element er age ba pore child element add kora.
+          box1.insertAdjacentElement('afterbegin', newDiv); // beforbegin o ache.
+          ul.insertBefore(p, li); // ul er vitore p ke li er age dukai dichi. insertBefore(2 arguements ney). 
+                                       first position jeta dukabo, last position jetar age dukabo.
+
+
+
+             // element er age ba porer vai ke remove korte pari.
+         newParagraph.previousSibling.remove(); // ager vai remove hoye jabe.
+          Item.nextElementSibling.remove(); // element er porer vai remove hobe.
+           document.getElementById('box3').remove(); // ekta element select kore abar remove() method use kore remove korte pari.
+
+
 
  <h1>this is event page</h1>
 

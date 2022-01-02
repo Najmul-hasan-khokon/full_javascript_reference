@@ -1,0 +1,35 @@
+
+// jokhon amader similar type er onek gula object thakbe.
+      tokhon amra class use korbo. then new keyword diye ek ek joner 
+       jonno alada alada object likbo.
+
+// new keyword amra tokhonoi use korbo jokhon kono ekta 
+      class theke object banano. jotogula khusi banabo.
+
+// Es6 asar age function diye this use kora jaito. class er sokol kaj kora jaito.
+      but eta r ekhon use hoy na.
+
+
+
+// class example
+
+class person {
+  constructor(firstName, lastName, salary) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.salary = salary;
+  }
+  getChargeBill = function () {
+    return ` i am from method`;
+  };
+}
+
+const rasel = new person("rasel", "hossain", 5000);
+const najmul = new person("najmul", "hasan", 10000);
+console.log(rasel);
+console.log(najmul);
+console.log(najmul.getChargeBill());
+
+
+
+

@@ -1,0 +1,43 @@
+// caile amra alada alada object ba ekta array er modde ek sathe o banaite pari.
+
+
+
+class Circle {
+  constructor(radius) {
+    this.radius = radius;
+  }
+  area() {
+    return Math.PI * Math.pow(this.radius, 2);
+  }
+}
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  area() {
+    return this.width * this.height;
+  }
+}
+
+class Triengle {
+  constructor(base, height) {
+    this.base = base;
+    this.height = height;
+  }
+  area() {
+    return (this.base * this.height) / 2;
+  }
+}
+
+const shapes = [new Circle(10), new Rectangle(10, 5), new Triengle(10, 15)];
+
+// for (let i = 0; i < shapes.length; i++) {  // for loop diyeo korte pari.
+//   const shape = shapes[i];
+//   console.log(shape.area());
+// }
+
+shapes.map((shape) => console.log(shape.area())); // jokhon triengle ba rectangle er area te jawa dorkar sekhane giye call korbe. 
+
+
+

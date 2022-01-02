@@ -1,0 +1,20 @@
+// kono ekta variable ba method er age jodi amra static keyword ta bosai dei
+    tahole amra sei property ba method take class er vitor theke access korte parbo.
+     bahir theke setake access kora jabe na.
+     orthad static keyword use korle amader ke class theke object baniye tarpor sei property ba method ta
+     access korte hobe na. just class er name . property ba method dilei hobe.
+   // abar non static gulake kintu pabo na.
+
+
+class Circle {
+  static name = "this is from static";
+  static constructor(radius) {
+    this.radius = radius;
+  }
+  static area() {
+    return "static area method";
+  }
+}
+
+console.log(Circle.name);
+console.log(Circle.area());

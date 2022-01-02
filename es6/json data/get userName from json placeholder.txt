@@ -40,4 +40,12 @@
           userData.appendChild(li);
         });
       }
+
+
+ 
+// item e click korle remove hobe.
+      document.getElementById("userData").addEventListener("click", (e) => {
+        e.target.remove(e.target);
+      });
+
     </script>

@@ -1,0 +1,5 @@
+javascript er joto kichu hoy sob kichui window er vitore ache.
+  pura browser e ja hoy sob kichui ache.
+
+// window eta global scop e thake . jemon chad hocce global but 
+     amar basar tik tiki hocce local.

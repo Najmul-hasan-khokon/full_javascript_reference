@@ -1,0 +1,24 @@
+// object oriented programming hocce jodi object diye diye kono ekta website er miximum kaj kora hoy. r object diye make 
+       korle setake object oriented programming language bola hoy.
+// function diye korle function oriented o bolte pari  kothar kotha.
+// jemon react hocce commponent based library.  karon component diyei pura react application make kora hoy.
+
+
+
+
+
+// class hocce ekta template.  sathe aro method o thakte pare.
+
+
+class Mouse {
+  constructor(brand, color, price) {
+    this.brand = brand;
+    this.color = color;
+    this.price = price;
+  }
+}
+
+const walton = new Mouse("Walton", "black", 250);
+const dell = new Mouse("Dell", "red", 500);
+console.log(walton);
+console.log(dell);

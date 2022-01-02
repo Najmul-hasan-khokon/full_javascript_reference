@@ -1,0 +1,11 @@
+// alert(), confirm(), promt(); 
+
+
+// window.location // eti diye ekta website er pura path ta dekte parbo. just console e giye search korlei hobe.
+     location.reload() , location.replace(), erokom onek kichui korte pari.
+           egula eto beshi kaje lage na . maje modde lagte pare.
+
+
+
+// window.history o ache. amra age kon page e cilam ba jaiteci orthad page age piche jawa ba reload kora
+            egula amra korte pari console theke.

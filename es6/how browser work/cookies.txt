@@ -1,0 +1,55 @@
+cookies 2 dhoroner hoy.
+
+no 1:  sesion cookies . 
+ cookies
+_____________
+   Cookies are data, stored in small text files, on your computer.
+
+   When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+
+   Cookies were invented to solve the problem "how to remember information about the user":
+
+  // When a user visits a web page, his/her name can be stored in a cookie.
+  // Next time the user visits the page, the cookie "remembers" his/her name.
+
+     cookies khuboi usefull jinis middle ba hight level application e eta lagte pare.
+          cookies theke data read , write korar kichu library o ache.
+
+      eta hocce jotokkhon ei website e thakbo / visit korbo totokhon thakbe.
+
+
+
+
+no 2: eta computer restart dileo 6mas 1bochor pore browser ba sei website e gele cookies gula abar server e diye dey.
+           cookies er maddome onek kichui kora jay.
+         // jemon youtube ba facebook e amara ekbar login korle pore abar visit korte caile seta cookies er 
+             maddome amaderke cine pele and amader profile ba account ager motoi okkhoto obostahy thake
+                , se jonno abar notun kore amader ke login korte hoy na.
+// arekta jinis cookies er maddome amra browser e ki install korci ba kon website e visite korci segulao track kore.
+    se khetre dekte hobe cookies chalu hoy emon button e click korci kina ba kono information diye dici kina.
+
+
+
+
+
+// abar maje modde amra jokhon kono ekta website e visit kori tara amader ke cookies allow korte bole
+     jodi allow kori tahole sekhane melwar o thakte pare.
+       // ba onek company ache jara cookies er maddome track kore jekhanei jai sekhanei tader business releted
+           add dekhay.
+
+
+
+
+
+
+another types cookies
+_________________________
+   local storage // doro youtube e browser off kore dileo amarder vidio dekhar current volume , video types
+                    ki ki video dekci egula amader local storage e thake
+                     jokhonoi amra youtube open kori se gula abar ager motoi thake.
+
+
+
+
+session storage // eta browser ba kono ekta tab jotokkhon open thake totokkhon porjonto thake. 
+

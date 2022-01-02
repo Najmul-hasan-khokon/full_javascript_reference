@@ -1,0 +1,91 @@
+
+// data post korte hole kichu bishoy mathay rakhte hobe.
+     fetch url er pore , diye ekta object dite hobe. jekhane kichu bishoy thakbe je
+       ekta method bole dite hobe eta post naki onno kichu. then jei data ta post korteci seta body te thakte
+          hobe. headers o diye tahole server bujbe je tomi kon type / formate er data post korteco.
+            er pore amra promise e kichu return paileo paite pari . 
+
+// ba ekta object alda likhe then body te pass kore dite pari.
+
+
+
+
+// summery 
+    fetch(' url ', method: 'POST', body: JSON.stringify({something}), headers: {content-type}) .then((res)=> res.json());
+                                                                                           .then((data)=> data)
+                                                                                            .catch((err)=> err);
+
+
+
+fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json()) // response take json e convert korbe;
+  .then((json) => console.log(json)); // then pura data ta json e pabo. caile onno name o dite pari.
+
+
+
+
+
+
+// user er kach theke input niye post method e server e data post korci.
+    tar por promise er maddone seta ke console.log() e output dekhaici.
+     
+
+
+    <input id="titleContent" type="text" name="" placeholder="title" />
+       <br />
+    <input id="bodyContent" type="text" name="" placeholder="body" />
+      <br />
+    <button id="submitBtn">submit</button>
+
+    <script>
+      document.getElementById("submitBtn").addEventListener("click", () => {
+        const title = document.getElementById("titleContent").value;
+        const body = document.getElementById("bodyContent").value;
+
+        const post = {     // create an object taking data from input.
+          title: titleContent,   // object er property and value gula same name e rakleo prblm nai.
+          body: bodyContent,
+        };
+
+        nowPostToServer(post); // call function with and object.
+      });
+
+      function nowPostToServer(postInfo) {
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+          method: "POST",
+          body: JSON.stringify(postInfo),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        })
+          .then((response) => response.json())
+          .then((json) => console.log(json))
+          .catch((err) => console.log(err));
+      }
+    </script>
+
+
+
+// xml ba http request ; // ekhon r eto beshi use hoyna. eta short version sobai ejax bolto.
+                          ejax muloto jquery te beshi use hoy. eta age beshi use hoto.
+
+
+
+
+
+
+ // promise ki?
+      doro ami kauke kono kichu request korci ekhon se dileo dite pare, na dile o dite pare.
+          dile ami ki korbo r na dile ki korbo? eta kintu amar kache ready thake.
+             
+
