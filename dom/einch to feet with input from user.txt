@@ -33,7 +33,7 @@
         const sum = inputField / feet;
         const result = Math.round(sum);
 
-        const output = document.getElementById(outputId).innerText;
+       // const output = document.getElementById(outputId).innerText;
 
         document.getElementById(outputId).innerText = `Total FeeT: ${result}`;
       }

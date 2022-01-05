@@ -5,11 +5,11 @@
 
 // jokhon amra server theke data load korbo 99% data json format e asbe.
        seta amader ke JSON.parse diye object e convert kore nite hobe.
-         amader data fula nested o hote pare object er vitore array abar tar vitore object etc....
+         amader data gula nested o hote pare object er vitore array abar tar vitore object etc....
 
 
 // data sever e post korte hole amra object ke stringify kore pathabo.
-// data server theke nite hobe json data ke parse kore sei object ke website e use korbo.
+// data server theke nite hole json data ke parse kore sei object ke website e use korbo.
 
 
 

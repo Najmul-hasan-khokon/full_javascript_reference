@@ -1,0 +1,83 @@
+
+/ primitive value always immutable. orthad eta change hobe na. just etar copy change hote pare.
+/ reference value mutable . orthad eta change hote pare.
+
+
+// Primitive Types
+      The original was not changed, we can only change the copy. orthad primitive type value
+       sudu value take copy korbe main. value te se hat dibe na ba change kore pelbe na.
+null
+undefined
+Boolean
+Number
+String
+
+
+   //Code Examples
+Copying a primitive:
+var a = 13         // assign `13` to `a`
+var b = a          // copy the value of `a` to `b`
+b = 37             // assign `37` to `b`
+console.log(a)     // => 13
+
+
+
+
+// Reference Types example.
+      The original was also changed, since the reference got copied. ei type variable direcly object ba 
+        array store kore rakhe na borong se object ba array er ekta reference ba address rakhe ba point kore thake.
+
+Array
+Object
+Function
+
+
+ // Copying a reference:
+var a = { c: 13 }  // assign the reference of a new object to `a`
+var b = a          // copy the reference of the object inside `a` to new variable `b`
+b.c = 37           // modify the contents of the object `b` refers to
+console.log(a)     // => { c: 37 }
+
+
+
+
+
+
+
+/// another example.
+____________________
+
+Let’s look at one more example to cement your understanding. What do you think happens when,
+   using the identity operator (===), we compare two primitives that have the same value?
+
+const name = "Tyler";
+const friend = "Tyler";
+
+name === friend; // true
+
+// Here we see that because name and friend have the same value, Tyler, when comparing them, we get true.
+ This probably seems obvious but it’s important to realize that the reason we get true is because, with the
+ identity operator, primitives are compared by their value. Since both values equal Tyler, comparing them 
+   evaluates to true.
+
+
+Now, what about reference values?
+const leo = {
+  type: "Dog",
+  name: "Leo",
+};
+
+const leito = {
+  type: "Dog",
+  name: "Leo",
+};
+
+leo === leito; // false
+
+// Even though leo and leito have the same properties and values, when comparing them with the identity operator,
+ we get false. The reason for that is because, unlike primitive values, reference values are compared by
+ their reference, or their location in memory. Above, even though leo and leito have the same properties 
+   and values, they’re occupying different locations in memory.
+
+Both these examples demonstrate how primitive types are compared by their value while reference types are 
+ compared by their reference.

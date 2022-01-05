@@ -9,7 +9,7 @@ var promise = "i promise i will work HARD i want to become a programmer";
     promise.toLowerCase()
     promise.indexOf('work')  // value match na hole -1 asbe.
     promise.split(' ')  // eta diye string ke bag korte pari. jeta diye 
-                           bag korbo just  just bole dibo. spli('i')
+                           bag korbo just  just bole dibo. split('i')
 
 
 

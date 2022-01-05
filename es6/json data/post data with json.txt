@@ -5,7 +5,7 @@
           hobe. headers o diye tahole server bujbe je tomi kon type / formate er data post korteco.
             er pore amra promise e kichu return paileo paite pari . 
 
-// ba ekta object alda likhe then body te pass kore dite pari.
+// ba ekta object alada likhe then body te pass kore dite pari.
 
 
 

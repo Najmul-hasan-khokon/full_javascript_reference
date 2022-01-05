@@ -1,8 +1,17 @@
 
-// javascript e even loop name ekta jinis ache  jekhane3ta jinis thake.
+// javascript e even loop name ekta jinis ache  jekhane 3ta jinis thake.
 
        1: stack
             kontar por konta kaj korbe sei jinista
 
        2: queue ba waiting line thake kichu jinis.   kono ekta stack khali holei waiting e 
                thaka code gula stack e chole jay then execude hoy.
+
+
+
+
+// amader function name and variables name gula stact akare thake top to bottom call hote thake
+  jokhon dekhe kono ekta code ektu time nibe tokhon js sei kaj ta tar assistent ke diye 
+   porer line e chole jay . tar por assistent er kaj ses hole se event loop er kache pass kore dey
+    ebong sekhane waiting e thake . stact er sokol code execution ses hole event loop 
+     waiting krito code gula ke stact e diye dey tar pore sei code execute hoy.
