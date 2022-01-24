@@ -1,0 +1,121 @@
+   // regexr.com website theke practice kora jay.
+// regular expression niye kaj korte 4ta function ache. amra grouping kore kore kaj korte pari.
+
+  1: match(regex); reg match kore jeta pabe setake array akare dey.
+  2: search(regex); match kore jeta pabe setar index number dey.
+  3: replace(regex , 'najmul'); reg ke najmul diye replace kore dibo.
+  4: test(text);  regex er sathe text  match hole true, na hole false return korbe.
+
+// for example a-z ek ekta regular expression.
+
+    /pattern/modifier
+
+caharacter class   egula sob specipit match korbe.
+_________________
+
+\w :  /\w/gi ---  tab and white space chara sob select korbe.
+\d :   /\d/gi --- sudu number gula select korbe.
+\s :   /\s/gi --- sudu space gula select korbe.
+\t : /\t/gi --- tab select korte.
+\n : /\n/gi  --- new line select korte.
+/. : /./gi --- new line chara any character. space dari koma soho sob.
+
+ei pettern dile ulta kaj korbe
+_______________________________
+\W :  /\W/gi ---  letter charectar chara sob select korbe. like white space . ; , etc...
+\D :   /\D/gi --- number chara sokol charater gula select hobe.
+
+
+
+
+brackets expression
+__________________
+/[abc]/gi  --- abc er modde jeta match korbe setai select hobe.
+/[a-k]/gi  -- a thke k projonto charater pailei select hobe.
+/[^a-z]/gi -- a theke z porjonto character chara sob select hobe.  ^ eta mane not bujay.
+
+
+  'color, colour'
+?  /colou?r/gi   ---- ?er age u ta thakteo pare nao thakte pare. color 2tai match korbe.
+*  /colou?r*/gi --- r er pore joto bar r thakbe sob select korbe.    like colorrrrr, colourrrr
+{1,3}     --- koybar match korbe setao.
+\?     --- ? select korte hole ? er age \ dibo tahole se etake string mone korbe, na hoy expression mone korbe . like \?
+
+
+^  : /^hi/gi   -- hi diye start hole seta dekhabe;
+$ : /tomi$/gi  -- tomi diye end hole seta dekhabe.
+$  : /tomi$/gim --- modifir m dewate multi line er end e tomi khoje select korbe.
+
+
+
+i : hole case insensative vabe match korbe. and eta first e jeta match korbe setai print korbe.
+g : hole globali ekta word ekdik bar thakleo seta match korbe.
+
+
+
+
+
+
+
+
+ bangladeshi number validation. example
+___________________________________________
+
+<!-- /(^(\+88|0088)?-?(01){1}[3456789]{1}(\d){8})$/ stactovrflow -->
+
+<!-- /^(?:\+?88|0088)?01[15-9]\d{8}$/g etao mutamuti -->
+
+<script>
+	const text = '+88-01887478196' // number
+	const regex = /(\+88)?-?(01)([1-9])\d{8}$/g
+	const matches = text.match(regex)
+	const index = text.search(regex)
+	const replaced = text.replace(regex, 'phone')
+	const testing = regex.test(text)
+	console.log(matches, index, replaced, testing) // ['+88-01887478196'] 0 'phone' true
+</script>
+
+// expalin /(\+88)?-?(01)([1-9])\d{8}$/g
+       multiple case hole grouping kore kore kaj korbo.
+
+jeheto + regular expression tai etake kaj korate hole tar age \ dite hobe.
++88 eta jeheto optional tai ? dite hobe
+- etao jeheto optional tai tar pore ? dite hobe.
+01 sob somoy thakbe.
+[1-9] 01 er pore 1 theke 9 er modde je kono ekta match korbe. like robi hole 8 r airtel hole 6.
+\d eta jeheto number hobe tai \d dite hobe.
+{8} ekhane bole diyechi 8digiter number dite hobe.
+$ ending koto hobe seta, sokol expression ses hobe 11ta digit hobe. er upore gelei false ba error asbe.
+
+
+
+
+
+// 5ta digit er upore ba niche gelei false hobe. 5 hole true hobe.
+const number = 28868;  
+const regex = /^\d{5}$/
+
+const result = regex.test(number)
+console.log(result);  // true
+
+
+^\d number diye start hoye {5}$ bar diye ses hobe.
+
+
+
+
+
+
+// email validation er jonno
+   /\S+@\S+\.\S+/   // like najmul@gmail.com
+
+\S+ ek ba ekadik character with @
+\S+ etao same
+\.  dot hobe
+\S+ ek ba ekadik charater hobe.
+
+
+
+
+
+
